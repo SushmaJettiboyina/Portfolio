@@ -37,7 +37,7 @@ nav{
 }
 nav ul{
     display:flex;
-    gap:40px;
+    gap:4w0px;
     list-style:none;
 }
 nav a{
@@ -441,7 +441,8 @@ footer{
         gap:20px;
     }
     .stat-card{
-        width:170px;
+        width:220px;
+        height:180px;
         padding:20px;
     }
     .stat-card h2{
@@ -641,7 +642,7 @@ section{
         width:220px;
         background:#0f172a;
         border-radius:12px;
-        padding:15px;
+        padding:10px;
         z-index:1000;
     }
 
