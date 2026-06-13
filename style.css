@@ -691,6 +691,12 @@ section{
 
 }
 @media(max-width:768px){
+    .coding-grid{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+        justify-items:center;
+    }
     .coding-card{
         width:150px;
         padding:20px;
