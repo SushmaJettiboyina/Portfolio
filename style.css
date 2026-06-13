@@ -448,8 +448,9 @@ footer{
     }
 
     .stat-card{
-        width:100%;
-        padding:20px 10px;
+        width:170px;
+        padding:20px;
+        min-height:150px;
     }
     
     .timeline::after{
