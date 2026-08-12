@@ -1308,6 +1308,13 @@ footer {
         font-size: 2.2rem;
     }
     
+    /* Mobile Grid Fallbacks */
+    .project-container,
+    .achievement-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
     .coding-container {
         gap: 15px;
     }
@@ -1317,9 +1324,54 @@ footer {
         max-width: 340px;
     }
     
+    .contact-links {
+        align-items: center;
+    }
+    
     .contact-link-card {
         width: 100%;
         max-width: 340px;
+    }
+    
+    .contact-form-wrapper {
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2.4rem;
+    }
+    
+    .hero-title .line1 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-role {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .hero-btns .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .image-wrapper {
+        width: 220px;
+        height: 220px;
     }
 }
 
