@@ -1315,14 +1315,16 @@ footer {
         grid-template-columns: 1fr;
     }
     
-    .coding-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
     .coding-card {
         width: 100%;
         max-width: 340px;
+    }
+
+    .coding-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 100%;
+        gap: 30px;
     }
     
     .contact-links {
