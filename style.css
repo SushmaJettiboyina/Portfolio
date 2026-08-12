@@ -1316,7 +1316,8 @@ footer {
     }
     
     .coding-container {
-        gap: 15px;
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
     
     .coding-card {
@@ -1325,17 +1326,16 @@ footer {
     }
     
     .contact-links {
-        align-items: center;
+        align-items: stretch;
     }
     
     .contact-link-card {
         width: 100%;
-        max-width: 340px;
+        max-width: none;
     }
     
     .contact-form-wrapper {
-        padding: 25px 20px;
-        border-radius: 20px;
+        width: 100%;
     }
 }
 
