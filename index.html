@@ -4,561 +4,532 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushma Jettiboyina | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
 
+<!-- Ambient Glow Background Blobs -->
+<div class="glow-blob glow-1"></div>
+<div class="glow-blob glow-2"></div>
+<div class="glow-blob glow-3"></div>
+
 <header>
-
     <nav class="navbar">
-
+        <a href="#" class="nav-logo">SJ</a>
         <div class="menu-toggle" onclick="toggleMenu()">
-            ☰
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-
         <ul id="navLinks">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#coding-profiles">Coding</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li><a href="#achievements" class="nav-item">Achievements</a></li>
+            <li><a href="#coding-profiles" class="nav-item">Coding</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
         </ul>
-
     </nav>
-
 </header>
 
-<section class="hero">
-    <div class="hero-text">
-        <h1>
-    <span class="line1">Hi, I'm</span>
-    <span class="line2">Sushma</span>
-    <span class="line3">Jettiboyina</span>
-</h1>
-    
+<section class="hero scroll-reveal">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 class="hero-title">
+                <span class="line1">Hi, I'm</span>
+                <span class="line2">Sushma</span>
+                <span class="line3">Jettiboyina</span>
+            </h1>
+            
+            <h2 class="hero-role">Final Year CSE Student</h2>
 
-    <h2 class="hero-role">
-    Final Year CSE Student
-</h2>
+            <div class="hero-badges">
+                <span><i class="fa-solid fa-award"></i> Amazon Future Engineer Scholar</span>
+                <span><i class="fa-solid fa-trophy"></i> GDG TechSprint – 3rd Place</span>
+                <span><i class="fa-solid fa-code"></i> 500+ LeetCode Problems</span>
+                <span><i class="fa-solid fa-rocket"></i> Adobe India Hackathon R2</span>
+            </div>
 
-    <div class="hero-badges">
+            <div class="hero-btns">
+                <a href="resume.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+                <button id="viewResumeBtn" class="btn btn-secondary">
+                    <i class="fa-solid fa-eye"></i> View Resume
+                </button>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fa-solid fa-paper-plane"></i> Let's Talk
+                </a>
+            </div>
+        </div>
 
-    <span>🏆 Amazon Future Engineer Scholar</span>
-
-    <span>🥉 GDG TechSprint – 3rd Place</span>
-
-    <span>💻 500+ LeetCode Problems</span>
-
-    <span>🚀 Adobe India Hackathon R2</span>
-
-</div>
-
-
-    <a href="resume.pdf"
-   class="btn"
-   target="_blank"
-   rel="noopener noreferrer">
-   Resume
-</a>
-
-</div>
-
-<div class="hero-image">
-        <img src="linkedinpic.jpeg" alt="Sushma Jettiboyina">
+        <div class="hero-image">
+            <div class="image-wrapper">
+                <img src="linkedinpic.jpeg" alt="Sushma Jettiboyina">
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="stats">
+<section class="stats scroll-reveal">
     <div class="stat-card">
-    <h2>550+</h2>
-    <p>Problems Solved</p>
-</div>
+        <div class="stat-icon"><i class="fa-solid fa-code-commit"></i></div>
+        <h2 class="stat-counter" data-target="550">0</h2>
+        <p>Problems Solved</p>
+    </div>
 
-<div class="stat-card">
-    <h2>9.03</h2>
-    <p>CGPA</p>
-</div>
+    <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h2 class="stat-counter" data-target="9.03" data-decimals="2">0.00</h2>
+        <p>CGPA</p>
+    </div>
 
-<div class="stat-card">
-    <h2>🥉3rd</h2>
-    <p>GDG TechSprint Hackathon</p>
-</div>
+    <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+        <h2>🥉 3rd</h2>
+        <p>GDG TechSprint Hackathon</p>
+    </div>
 
-<div class="stat-card">
-    <h2>🥈2nd</h2>
-<p>Coding Contest</p>
-</div>
+    <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-medal"></i></div>
+        <h2>🥈 2nd</h2>
+        <p>Coding Contest</p>
+    </div>
 </section>
 
-
-<section id="about">
-    <h2>About Me</h2>
-
-    <p>
-        Final-year Computer Science student at Shri Vishnu Engineering College for Women with a CGPA of 9.03. Interested in Full Stack Development, Competitive Programming, Open Source, and AI-powered applications. I enjoy building practical software solutions and continuously improving my problem-solving skills through coding contests and real-world projects.
-</p>
-    </p>
+<section id="about" class="scroll-reveal">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+        <div class="about-content">
+            <p class="lead-text">
+                Final-year Computer Science student at Shri Vishnu Engineering College for Women with a CGPA of 9.03.
+            </p>
+            <p>
+                Interested in Full Stack Development, Competitive Programming, Open Source, and AI-powered applications. I enjoy building practical software solutions and continuously improving my problem-solving skills through coding contests and real-world projects.
+            </p>
+            <p>
+                I thrive in fast-paced collaborative environments and love contributing to open-source initiatives to build technology that makes an impact.
+            </p>
+        </div>
+        <div class="about-highlights">
+            <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="highlight-info">
+                    <h4>Education</h4>
+                    <p>Shri Vishnu Engineering College for Women</p>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                <div class="highlight-info">
+                    <h4>Interests</h4>
+                    <p>Web Development, AI/ML, Data Structures</p>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-people-group"></i></div>
+                <div class="highlight-info">
+                    <h4>Community</h4>
+                    <p>GDG Open Source Co-Lead & Contributor</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="skills">
+<section id="skills" class="scroll-reveal">
+    <h2 class="section-title">Skills & Tech Stack</h2>
 
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills-category">
-
-        <h3>💻 Programming Languages</h3>
-
-        <div class="skills-row">
-            <span>Python</span>
-            <span>Java</span>
-            <span>C</span>
-            <span>JavaScript</span>
-            <span>SQL</span>
+    <div class="skills-grid">
+        <div class="skills-category">
+            <h3><i class="fa-solid fa-terminal"></i> Languages</h3>
+            <div class="skills-row">
+                <span><i class="devicon-python-plain colored"></i> Python</span>
+                <span><i class="devicon-java-plain colored"></i> Java</span>
+                <span><i class="devicon-c-plain colored"></i> C</span>
+                <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                <span><i class="devicon-mysql-plain colored"></i> SQL</span>
+            </div>
         </div>
 
-    </div>
-
-    <div class="skills-category">
-
-        <h3>🌐 Web Development</h3>
-
-        <div class="skills-row">
-            <span>React</span>
-            <span>Node.js</span>
-            <span>Express.js</span>
-            <span>Tailwind CSS</span>
-            <span>Flask</span>
-            <span>Streamlit</span>
-            <span>Flutter</span>
+        <div class="skills-category">
+            <h3><i class="fa-solid fa-globe"></i> Web Development</h3>
+            <div class="skills-row">
+                <span><i class="devicon-react-original colored"></i> React</span>
+                <span><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                <span><i class="devicon-express-original"></i> Express.js</span>
+                <span><i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS</span>
+                <span><i class="devicon-flask-original"></i> Flask</span>
+                <span><i class="devicon-streamlit-plain colored"></i> Streamlit</span>
+                <span><i class="devicon-flutter-plain colored"></i> Flutter</span>
+            </div>
         </div>
 
-    </div>
-
-    <div class="skills-category">
-
-        <h3>🤖 Data Science & AI</h3>
-
-        <div class="skills-row">
-            <span>NumPy</span>
-            <span>Pandas</span>
-            <span>Matplotlib</span>
-            <span>Seaborn</span>
-            <span>NLP</span>
+        <div class="skills-category">
+            <h3><i class="fa-solid fa-brain"></i> Data Science & AI</h3>
+            <div class="skills-row">
+                <span><i class="devicon-numpy-plain colored"></i> NumPy</span>
+                <span><i class="devicon-pandas-plain colored"></i> Pandas</span>
+                <span><i class="fa-solid fa-chart-bar colored"></i> Matplotlib</span>
+                <span><i class="fa-solid fa-chart-pie colored"></i> Seaborn</span>
+                <span><i class="fa-solid fa-gears"></i> NLP</span>
+            </div>
         </div>
 
-    </div>
-
-    <div class="skills-category">
-
-        <h3>🗄️ Databases</h3>
-
-        <div class="skills-row">
-            <span>MongoDB</span>
-            <span>MySQL</span>
-            <span>SQLite</span>
+        <div class="skills-category">
+            <h3><i class="fa-solid fa-database"></i> Databases</h3>
+            <div class="skills-row">
+                <span><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+                <span><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                <span><i class="devicon-sqlite-plain colored"></i> SQLite</span>
+            </div>
         </div>
 
-    </div>
-
-    <div class="skills-category">
-
-        <h3>🛠️ Tools & Platforms</h3>
-
-        <div class="skills-row">
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>VS Code</span>
-            <span>Google Colab</span>
+        <div class="skills-category">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Platforms</h3>
+            <div class="skills-row">
+                <span><i class="devicon-git-plain colored"></i> Git</span>
+                <span><i class="devicon-github-original"></i> GitHub</span>
+                <span><i class="devicon-vscode-plain colored"></i> VS Code</span>
+                <span><i class="devicon-google-plain colored"></i> Google Colab</span>
+            </div>
         </div>
 
-    </div>
-
-    <div class="skills-category">
-
-        <h3>🎯 Core CS Concepts</h3>
-
-        <div class="skills-row">
-            <span>DSA</span>
-            <span>OOP</span>
-            <span>Problem Solving</span>
+        <div class="skills-category">
+            <h3><i class="fa-solid fa-square-root-variable"></i> Core Concepts</h3>
+            <div class="skills-row">
+                <span><i class="fa-solid fa-sitemap"></i> DSA</span>
+                <span><i class="fa-solid fa-cubes"></i> OOP</span>
+                <span><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
+            </div>
         </div>
-
     </div>
-
 </section>
 
-<section id="projects">
-
+<section id="projects" class="scroll-reveal">
     <h2 class="section-title">Featured Projects</h2>
 
     <div class="project-container">
-        
-
         <!-- PrepGuide -->
-
         <div class="project-card">
-            <img src="images/prepguide.png" class="project-image">
-
+            <div class="project-img-wrapper">
+                <img src="images/prepguide.png" class="project-image" alt="PrepGuide">
+                <div class="project-overlay">
+                    <a href="https://github.com/SushmaJettiboyina/prepGuide.git" target="_blank" class="overlay-link"><i class="fa-brands fa-github"></i> View GitHub</a>
+                </div>
+            </div>
             <div class="project-content">
-
                 <h3>PrepGuide</h3>
-
                 <div class="tech-stack">
                     <span>MERN</span>
                     <span>JWT</span>
                     <span>Tailwind</span>
                 </div>
-
                 <ul>
-                    <li>Interview Experience Sharing</li>
-                    <li>Secure Authentication</li>
-                    <li>Bookmarks Feature</li>
-                    <li>Experience Management</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Interview Experience Sharing</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Secure Authentication</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Bookmarks Feature</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Experience Management</li>
                 </ul>
-
                 <a href="https://github.com/SushmaJettiboyina/prepGuide.git" target="_blank" class="github-btn">
-                    GitHub →
+                    <i class="fa-brands fa-github"></i> GitHub →
                 </a>
-
             </div>
-
         </div>
 
         <!-- CakeOry -->
-
         <div class="project-card">
-            <img src="images/cakeory.png" class="project-image">
+            <div class="project-img-wrapper">
+                <img src="images/cakeory.png" class="project-image" alt="CakeOry">
+                <div class="project-overlay">
+                    <a href="https://github.com/SushmaJettiboyina/CakeOry.git" target="_blank" class="overlay-link"><i class="fa-brands fa-github"></i> View GitHub</a>
+                </div>
+            </div>
             <div class="project-content">
-
                 <h3>CakeOry</h3>
-
                 <div class="tech-stack">
                     <span>React</span>
                     <span>Firebase</span>
                     <span>Google APIs</span>
                 </div>
-
                 <ul>
-                    <li>AI Cake Customization</li>
-                    <li>Chatbot Assistance</li>
-                    <li>Google Maps Integration</li>
-                    <li>Order Management</li>
+                    <li><i class="fa-solid fa-circle-check"></i> AI Cake Customization</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Chatbot Assistance</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Google Maps Integration</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Order Management</li>
                 </ul>
-
                 <a href="https://github.com/SushmaJettiboyina/CakeOry.git" target="_blank" class="github-btn">
-                    GitHub →
+                    <i class="fa-brands fa-github"></i> GitHub →
                 </a>
-
             </div>
-
         </div>
 
         <!-- Smart Recipe Companion -->
-
         <div class="project-card">
-            <img src="images/smartrecipe.png" class="project-image">
+            <div class="project-img-wrapper">
+                <img src="images/smartrecipe.png" class="project-image" alt="Smart Recipe Companion">
+                <div class="project-overlay">
+                    <a href="https://github.com/SushmaJettiboyina/Smart-recipe-companion.git" target="_blank" class="overlay-link"><i class="fa-brands fa-github"></i> View GitHub</a>
+                </div>
+            </div>
             <div class="project-content">
-
                 <h3>Smart Recipe Companion</h3>
-
                 <div class="tech-stack">
                     <span>Python</span>
                     <span>NLP</span>
                     <span>Streamlit</span>
                 </div>
-
                 <ul>
-                    <li>Personalized Recipes</li>
-                    <li>NLP Processing</li>
-                    <li>100+ Ingredient Combinations</li>
-                    <li>Dynamic Recipe Generation</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Personalized Recipes</li>
+                    <li><i class="fa-solid fa-circle-check"></i> NLP Processing</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 100+ Ingredient Combinations</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Dynamic Recipe Generation</li>
                 </ul>
-
                 <a href="https://github.com/SushmaJettiboyina/Smart-recipe-companion.git" target="_blank" class="github-btn">
-                    GitHub →
+                    <i class="fa-brands fa-github"></i> GitHub →
                 </a>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-<section id="achievements">
-
+<section id="achievements" class="scroll-reveal">
     <h2 class="section-title">Achievements</h2>
 
     <div class="achievement-grid">
-
         <!-- Amazon FFE -->
-
         <div class="achievement-card">
-
             <div class="achievement-top">
-                🏆
+                <i class="fa-solid fa-award"></i>
             </div>
-
             <h3>Amazon Future Engineer Scholar</h3>
-
             <p>
-                Selected by FFE India for academic excellence,
-                leadership potential and commitment to technology.
+                Selected by FFE India for academic excellence, leadership potential, and commitment to technology.
             </p>
-
         </div>
 
         <!-- GDG TechSprint -->
-        <div class="achievement-card">
-
+        <div class="achievement-card slider-card">
             <div class="achievement-slider">
-
-                <img src="images/gdg1_techsprint_hackathon.jpeg" class="slide active">
-                <img src="images/gdg2_techsprint_hackathon.jpg" class="slide">
-
+                <img src="images/gdg1_techsprint_hackathon.jpeg" class="slide active" alt="GDG TechSprint">
+                <img src="images/gdg2_techsprint_hackathon.jpg" class="slide" alt="GDG TechSprint Award">
+                <div class="slider-dots"></div>
             </div>
-
             <h3>GDG TechSprint Hackathon</h3>
-
             <p>
-                Secured 3rd Place among 105 teams for building
-                an AI-powered web solution using React and Firebase.
+                Secured 3rd Place among 105 teams for building an AI-powered web solution using React and Firebase.
             </p>
-
         </div>
 
-        <div class="achievement-card">
-
+        <!-- Coding Contest -->
+        <div class="achievement-card slider-card">
             <div class="achievement-slider">
-
-                <img src="images/coding_contest1.jpeg" class="slide active">
-                <img src="images/coding_contest2.jpeg" class="slide">
-                <img src="images/coding_contest3.jpeg" class="slide">
+                <img src="images/coding_contest1.jpeg" class="slide active" alt="Coding Contest 1">
+                <img src="images/coding_contest2.jpeg" class="slide" alt="Coding Contest 2">
+                <img src="images/coding_contest3.jpeg" class="slide" alt="Coding Contest 3">
+                <div class="slider-dots"></div>
             </div>
-
             <h3>Inter-College Coding Contest</h3>
-
             <p>
-                Secured 2nd Place at Velagapudi Ramakrishna Siddhartha Engineering College, clearing 3
-coding rounds and receiving a Merit Certificate, Memento & Cash Prize.
+                Secured 2nd Place at Velagapudi Ramakrishna Siddhartha Engineering College, clearing 3 coding rounds and receiving a Merit Certificate, Memento & Cash Prize.
             </p>
-
         </div>
 
         <!-- GDG Open Source -->
-
         <div class="achievement-card">
-
-            <img src="images/opensource.webp"
-                 class="achievement-image">
-
+            <img src="images/opensource.webp" class="achievement-image" alt="GDG Open Source">
             <h3>GDG Open Source Co-Lead</h3>
-
             <p>
-                Mentored 50+ students and organized
-                workshops promoting open-source culture.
+                Mentored 50+ students and organized workshops promoting open-source culture.
             </p>
-
         </div>
 
         <!-- GSSoC -->
-
         <div class="achievement-card">
-
             <div class="achievement-top">
-                🌍
+                <i class="fa-solid fa-globe"></i>
             </div>
-
             <h3>GSSoC Contributor</h3>
-
             <p>
-                Contributed to open-source projects
-                and collaborated with developers globally.
+                Contributed to open-source projects and collaborated with developers globally.
             </p>
-
         </div>
 
         <!-- HackerRamp -->
-
-        <div class="achievement-card">
-
+        <div class="achievement-card slider-card">
             <div class="achievement-slider">
-
-                <img src="images/WeForShe Hackerramp1.jpeg" class="slide active">
-                <img src="images/WeForShe Hackerramp2.jpeg" class="slide">
-
+                <img src="images/WeForShe Hackerramp1.jpeg" class="slide active" alt="HackerRamp 1">
+                <img src="images/WeForShe Hackerramp2.jpeg" class="slide" alt="HackerRamp 2">
+                <div class="slider-dots"></div>
             </div>
-
             <h3>WeForShe HackerRamp 2025</h3>
-
             <p>
-                Shortlisted among Top 100 teams out of
-                56,260+ participants nationwide.
+                Shortlisted among Top 100 teams out of 56,260+ participants nationwide.
             </p>
-
         </div>
 
         <!-- Adobe -->
-
         <div class="achievement-card">
-
-            <img src="images/adobe.jpeg"
-                 class="achievement-image">
-
+            <img src="images/adobe.jpeg" class="achievement-image" alt="Adobe Hackathon">
             <h3>Adobe India Hackathon</h3>
-
             <p>
-                Advanced to Round 2 after clearing MCQ
-                and Coding rounds.
+                Advanced to Round 2 after clearing MCQ and Coding rounds.
             </p>
-
         </div>
 
+        <!-- Smart Coder -->
         <div class="achievement-card">
-
             <div class="achievement-top">
-                🥉
+                <i class="fa-solid fa-certificate"></i>
             </div>
-
-            <h3>Smart Coder Bronze Certification</h3>
-
+            <h3>Smart Coder Bronze</h3>
             <p>
-                Achieved a global rank in the Top 6%
-                among 47,490+ participants on
-                Smart Interviews.
+                Achieved a global rank in the Top 6% among 47,490+ participants on Smart Interviews.
             </p>
-
         </div>
 
+        <!-- SVECW Ideathon -->
         <div class="achievement-card">
-
             <div class="achievement-top">
-                💡
+                <i class="fa-solid fa-lightbulb"></i>
             </div>
-
             <h3>SVECW Ideathon</h3>
-
             <p>
-                Placed among the Top 25 teams
-                out of 160+ teams for developing
-                an innovative solution within 24 hours.
+                Placed among the Top 25 teams out of 160+ teams for developing an innovative solution within 24 hours.
             </p>
-
         </div>
         
+        <!-- Study Jams -->
         <div class="achievement-card">
-
-            <img src="images/studyjams.jpeg"
-                 class="achievement-image">
-
-            <h3>Google Cloud Gen-AI Study Jams</h3>
-
+            <img src="images/studyjams.jpeg" class="achievement-image" alt="Google Cloud Study Jams">
+            <h3>Google Cloud Study Jams</h3>
             <p>
-                Completed 60+ hands-on labs under
-        Google Cloud Gen-AI Study Jams,
-        gaining practical experience in
-        cloud technologies and Generative AI.
+                Completed 60+ hands-on labs under Google Cloud Gen-AI Study Jams, gaining practical experience in cloud technologies and Generative AI.
             </p>
-
         </div>
-
-
     </div>
-
 </section>
 
-
-<section id="coding-profiles">
-
-    <h2 class="section-title">
-        Coding Profiles
-    </h2>
+<section id="coding-profiles" class="scroll-reveal">
+    <h2 class="section-title">Coding Profiles</h2>
 
     <div class="coding-container">
-
-        <a href="https://leetcode.com/u/23b01a0570/"
-           target="_blank"
-           class="coding-card">
-
-           <img src="images/leetcode.png" class="platform-icon">
-
-            <div class="coding-number">550+</div>
-
-            <div class="coding-title">
-                LeetCode Problems
+        <a href="https://leetcode.com/u/23b01a0570/" target="_blank" class="coding-card leetcode-card">
+            <div class="platform-icon-wrapper">
+                <img src="images/leetcode.png" class="platform-icon" alt="LeetCode">
             </div>
-
+            <div class="coding-number" data-target="550">0</div>
+            <div class="coding-title">LeetCode Problems</div>
         </a>
 
-        <a href="https://www.hackerrank.com/profile/sushma_14"
-           target="_blank"
-           class="coding-card">
-
-                <img src="images/hackerrank.jpeg" class="platform-icon">
-
-            <div class="coding-number">⭐ 5-Star</div>
-
-            <div class="coding-title">
-                HackerRank Problem Solver
+        <a href="https://www.hackerrank.com/profile/sushma_14" target="_blank" class="coding-card hackerrank-card">
+            <div class="platform-icon-wrapper">
+                <img src="images/hackerrank.jpeg" class="platform-icon" alt="HackerRank">
             </div>
-
+            <div class="coding-number-text">⭐ 5-Star</div>
+            <div class="coding-title">HackerRank Problem Solver</div>
         </a>
 
-        <a href="https://www.codechef.com/users/sushma_j_14"
-           target="_blank"
-           class="coding-card">
-                <img src="images/codechef.jpeg" class="platform-icon">
-
-            <div class="coding-number">Profile</div>
-
-            <div class="coding-title">
-                CodeChef Profile
+        <a href="https://www.codechef.com/users/sushma_j_14" target="_blank" class="coding-card codechef-card">
+            <div class="platform-icon-wrapper">
+                <img src="images/codechef.jpeg" class="platform-icon" alt="CodeChef">
             </div>
-
+            <div class="coding-number-text">CodeChef</div>
+            <div class="coding-title">CodeChef Profile</div>
         </a>
-        
-
     </div>
-
 </section>
 
-<section id="contact">
-
+<section id="contact" class="scroll-reveal">
     <h2 class="section-title">Let's Connect</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <p class="contact-text">
+                Feel free to reach out for opportunities, collaborations, or just a tech discussion.
+            </p>
+            <p class="contact-location">
+                <i class="fa-solid fa-location-dot"></i> Andhra Pradesh, India
+            </p>
+            <div class="contact-links">
+                <a href="mailto:sushma.jettiboyina@gmail.com" class="contact-link-card mail-card">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="contact-card-text">
+                        <span>Email</span>
+                        <p>sushma.jettiboyina@gmail.com</p>
+                    </div>
+                </a>
 
-    <p class="contact-text">
-        Feel free to reach out for opportunities,
-        collaborations, or just a tech discussion.
-    </p>
-     <p class="contact-location">
-        📍 Andhra Pradesh, India
-    </p>
-    <div class="contact-links">
+                <a href="https://www.linkedin.com/in/sushma-jettiboyina-145486292" target="_blank" class="contact-link-card linkedin-card">
+                    <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                    <div class="contact-card-text">
+                        <span>LinkedIn</span>
+                        <p>Sushma Jettiboyina</p>
+                    </div>
+                </a>
 
-        <a href="mailto:sushma.jettiboyina@gmail.com">
-            📧 Email
-        </a>
+                <a href="https://github.com/SushmaJettiboyina" target="_blank" class="contact-link-card github-card">
+                    <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                    <div class="contact-card-text">
+                        <span>GitHub</span>
+                        <p>@SushmaJettiboyina</p>
+                    </div>
+                </a>
+            </div>
+        </div>
 
-        <a href="https://www.linkedin.com/in/sushma-jettiboyina-145486292" target="_blank">
-            💼 LinkedIn
-        </a>
-
-        <a href="https://github.com/SushmaJettiboyina" target="_blank">
-            💻 GitHub
-        </a>
-
+        <div class="contact-form-wrapper">
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/xnpavjny" method="POST">
+                <div class="form-group">
+                    <label for="formName">Name</label>
+                    <input type="text" id="formName" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="formEmail">Email</label>
+                    <input type="email" id="formEmail" name="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="formSubject">Subject</label>
+                    <input type="text" id="formSubject" name="subject" placeholder="Collaboration / Job Opportunity" required>
+                </div>
+                <div class="form-group">
+                    <label for="formMessage">Message</label>
+                    <textarea id="formMessage" name="message" rows="5" placeholder="Hi Sushma, I would love to connect..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit-btn">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+                <div id="formStatus" class="form-status"></div>
+            </form>
+        </div>
     </div>
-
 </section>
-
 
 <footer>
-    <p>© 2026 Sushma Jettiboyina</p>
+    <p>© 2026 Sushma Jettiboyina </p>
 </footer>
+
+<!-- Resume Modal Viewer -->
+<div id="resumeModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><i class="fa-solid fa-file-invoice"></i> Resume Viewer</h3>
+            <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <iframe src="resume.pdf" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
