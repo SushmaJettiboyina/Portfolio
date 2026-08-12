@@ -934,14 +934,13 @@ section {
 }
 
 .contact-container {
-    display: flex;
+    display: grid;
     grid-template-columns: 1fr 1.1fr;
-    gap: 30px;
+    gap: 50px;
     text-align: left;
-    max-width: 100%;
+    max-width: 1150px;
     margin: 0 auto;
     align-items: start;
-    flex-direction: column;
     width: 100% ;
 }
 
@@ -1331,6 +1330,12 @@ footer {
         gap: 30px;
     }
     
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        width: 100%;
+    }
+
     .contact-links {
         align-items: stretch;
     }
